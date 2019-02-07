@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Kalkulator Sederhana</title>
+    </head>
+    <script language = "JavaScript">
+        function Tambah(){
+            var a = document.kirim.T1.value
+            var b = document.kirim.T2.value
+            document.kirim.T3.value = parseInt(a)+parseInt(b)
+        }
+        function Kurang(){
+            var a = document.kirim.T1.value
+            var b = document.kirim.T2.value
+            document.kirim.T3.value = parseInt(a)-parseInt(b)
+        }
+        function Bagi(){
+            var a = document.kirim.T1.value
+            var b = document.kirim.T2.value
+            document.kirim.T3.value = parseInt(a)/parseInt(b)
+        }
+        function Kali(){
+            var a = document.kirim.T1.value
+            var b = document.kirim.T2.value
+            document.kirim.T3.value = parseInt(a)*parseInt(b)
+        }
+    </script>
+    <body>
+            <form method="POST" name="kirim">
+                <p>Bilangan 1 <input type="text" name="T1" size="20"><br></p>
+                <p>Bilangan 2 <input type="text" name="T2" size="20"><br></p>
+                <p>Hasil      <input type="text" name="T3" size="20"></p>
+                <p><input type="button" value="+" name="B1" onclick=Tambah()></p>
+                <p><input type="button" value="-" name="B1" onclick=Kurang()></p>
+                <p><input type="button" value="/" name="B1" onclick=Bagi()></p>
+                <p><input type="button" value="*" name="B1" onclick=Kali()></p>
+            </form>
+    </body>
+</html>
